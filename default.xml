@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="origin" fetch="https://github.com"/>
+    <default revision="master" remote="origin" />
+    <!-- https://github.com/absfree/SimpleJSON.git -->
+    <project path="SimpleJSON"            name="absfree/SimpleJSON.git"/>
+    <!-- https://github.com/lihaoyi/Metascala.git -->
+    <project path="Metascala"             name="lihaoyi/Metascala.git"/>
+    <!-- https://github.com/HelloVass/StyleButton.git -->
+    <project path="StyleButton"           name="HelloVass/StyleButton.git"/>
+
+</manifest>
