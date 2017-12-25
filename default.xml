@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+    <!-- origin 是指每个仓库的远程分支 fetch 是指从改地址拉去每个仓库-->
     <remote name="origin" fetch="https://github.com"/>
+    <!-- revision 是指拉下来以后，每个仓库所在的 head 头与 master 相同， remote 就是对前面 remote 节点取的名字 -->
     <default revision="master" remote="origin" />
     <!-- https://github.com/absfree/SimpleJSON.git -->
+    <!-- Path 表示仓库会被 clone 到 SimpleJson 文件夹中 -->
+    <!-- name 有点特别，先看该仓库完整的地址是 {https://github.com/absfree/SimpleJSON.git} -->
+    <!-- name 的作用就是，相对于 remote 节点指定的 fetch 地址，进行拼接 ${remote_fetch}/${project_name}.git -->
     <project path="SimpleJSON"            name="absfree/SimpleJSON.git"/>
     <!-- https://github.com/lihaoyi/Metascala.git -->
     <project path="Metascala"             name="lihaoyi/Metascala.git"/>
